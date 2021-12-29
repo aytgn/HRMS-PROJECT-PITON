@@ -24,6 +24,11 @@
       "relation": "oneToMany",
       "target": "api::team.team",
       "mappedBy": "department"
+    },
+    "manager": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::employee.employee"
     }
   }
 }
